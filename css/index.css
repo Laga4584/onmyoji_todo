@@ -1,0 +1,93 @@
+html{
+    font-size: 62.5%; 
+}
+
+@media screen and (max-width:768px){
+    html{font-size: calc(0.35vw + 5px);}
+    body, .bnb{width: 100%;}
+    header{height: 10vw;}
+    .today{height: 30vw;}
+    .todo_list li{height: 30vw;}
+    
+}
+@media screen and (min-width:769px){
+    html{font-size: 11.428px}
+    body, .bnb{width: 768px;margin: auto}
+    header{height: 76.8px;}
+    
+}
+
+body{background: #1a1c35}
+header{
+    margin: 5% 0;
+}
+.title{
+    width: 90%;
+    margin: auto;
+}
+header a{
+    display: block;
+    width: 100%;
+    color:#ee7c28;
+    font-size: 3rem;
+    border-bottom: 2px solid #353951;
+    padding-bottom: 5%
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+.today{
+    width: 100%;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 5%;
+}
+
+.info_1{
+    float: left;
+}
+
+.info_2{
+    float: right;
+}
+
+.bold{
+    color:#ee7c28;
+    font-size: 5rem;
+}
+
+.todo_list li{
+    width: 100%;
+    background: #353951;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    color: white;
+    font-size: 3rem;
+    box-sizing: border-box;
+    padding: 5%
+}
+
+.todo_info{
+    float: left;
+}
+
+.todo_title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.check{
+    float: right;
+    width: 5%;
+    height: 20%;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-top: 10%
+}
+
+.todo_more{
+    color: #60647b
+}

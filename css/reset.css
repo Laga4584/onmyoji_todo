@@ -1,0 +1,24 @@
+body,h1,h2,h3,p,div,ul,li,input, fieldset, legend{
+    margin:0;
+    padding:0
+}
+body{
+    font-family: "Noto Sans KR", "나눔고딕", "맑은 고딕", "돋움";
+    font-size:14px
+}
+ul,li{
+    list-style:none
+}
+a{
+    text-decoration:none;
+    color:#000 /* inherit */
+}
+address{
+    font-style:normal
+}
+fieldset, input{
+    border: none;
+    background-color: transparent;
+}
+
+input:focus {outline: none;}

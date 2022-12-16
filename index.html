@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+
+  <!-- 뷰포트, 파비콘 설정-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+   
+    <title>음양사를 위한 오늘의 할일</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="title"><a href="">음양사를 위한 오늘의 할일</a></div>
+    </header>
+    <main>
+        <section class="today">
+            <div class="info_1">
+                <p>2022년 12월 16일</p>
+                <p class="bold">금요일</p>
+            </div>
+            
+        </section>
+        <section class="todo_list">
+            <ul>
+                <li>
+                    <div class="todo_info">
+                        <p class="todo_title">[일일] 대전</p>
+                        <p>12:00~14:00</p>
+                    </div>
+                    <div class="check"></div>
+                </li>
+                <li>
+                    <div class="todo_info">
+                        <p class="todo_title">[일일] 지역귀왕</p>
+                        <p>9:00~24:00</p>
+                    </div>
+                    <div class="check"></div>
+                </li>
+                <li>
+                    <div class="todo_info">
+                        <p class="todo_title">[이벤트] 사계 찾기</p>
+                        <p>09:00~24:00</p>
+                        <p class="todo_more"><br>이벤트 정보 보러가기 ></p>
+                    </div>
+                    <div class="check"></div>
+                </li>
+                <li>
+                    <div class="todo_info">
+                        <p class="todo_title">[화합전]</p>
+                        <p>00:00~24:00</p>
+                        <p class="todo_more"><br>세부 미션 ></p>
+                    </div>
+                    <div class="check"></div>
+                </li>
+                <li>
+                    <div class="todo_info">
+                        <p class="todo_title">[일일] 봉마지시</p>
+                        <p>18:00~23:00</p>
+                    </div>
+                    <div class="check"></div>
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+    
+    </main>
+    <section class="bnb">
+        <ul>
+            <li class="bnb_novel"><a href="">소설</a></li>
+            <li class="bnb_review"><a href="">리뷰</a></li>
+            <li class="bnb_mypage"><a href="">마이</a></li>
+        </ul>
+    </section>
+    <!-- 서비스 워커 등록 -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('./service_worker.js')
+        .then(function () {
+          console.log('서비스 워커가 등록됨!');
+        })
+    }
+  </script>
+</body>
+</html>

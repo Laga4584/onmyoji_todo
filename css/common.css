@@ -1,0 +1,4 @@
+* 공통 클래스 */
+        .blind{position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden}
+        .screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent: -9999px}
+        .hide{position:absolute;left:-9999px;top:-9999px}
