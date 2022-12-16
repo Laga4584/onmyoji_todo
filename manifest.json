@@ -1,0 +1,15 @@
+{
+     "name" : "음양사를 위한 오늘의 할일",
+     "short_name" : "오늘의 할일",
+     "description" : "음양사를 위한 오늘의 할일",
+     "scope" : ".",
+     "start_url" : "./",
+     "display" : "standalone",
+     "orientation" : "portrait",
+     "theme_color" : "#1a1c35",
+     "background_color" : "#1a1c35",
+     "icons" : [
+       
+    ]
+}
+    
