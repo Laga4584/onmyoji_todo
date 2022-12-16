@@ -1,4 +1,4 @@
-const sCacheName = "v1"; // 캐시 제목
+const sCacheName = "v2"; // 캐시 제목
 const aFilesToCache = [ // 캐시할 파일 지정
     './', 
     './index.html', 
@@ -29,7 +29,7 @@ self.addEventListener("activate", event => {
       caches.keys().then((keys) => {
           return Promise.all(
               keys.filter(key => {
-                  return key === 'v0';
+                  return key === 'v1';
               }).map((key) => {
                   return caches.delete(key);
               })
